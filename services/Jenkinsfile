@@ -4,7 +4,7 @@ pipeline {
     options {
         buildDiscarder(logRotator(numToKeepStr: '6'))
     }
-    agent { any }
+    agent any
     stages {
         stage('checkout scm') {
             steps {
